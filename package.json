@@ -1,0 +1,37 @@
+{
+  "name": "@boringtutor/nextjs-honeypot",
+  "version": "1.0.0",
+  "description": "This is the honeypot library for nextjs",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "vitest --run",
+    "lint": "next lint",
+    "test:watch": "vitest",
+    "ci": "npm run lint && npm run test && npm run build",
+    "release": "npm run lint && npm run test && npm run build && changeset publish"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@types/crypto-js": "^4.1.2",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@vitest/coverage-v8": "^1.5.0",
+    "vitest": "^1.4.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "typescript": "^5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
